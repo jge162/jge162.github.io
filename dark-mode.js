@@ -1,12 +1,18 @@
-const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+const toggleBtn = document.getElementById("toggle-theme");
 
-function toggleDarkMode(event) {
-  if (event.matches) {
-    document.documentElement.setAttribute('data-theme', 'dark');
+toggleBtn.addEventListener("click", () => {
+  const body = document.body;
+  body.classList.toggle("dark-mode");
+  if (body.classList.contains("dark-mode")) {
+    localStorage.setItem("theme", "dark");
   } else {
-    document.documentElement.setAttribute('data-theme', 'light');
+    localStorage.setItem("theme", "light");
   }
-}
+});
 
-darkModeMediaQuery.addEventListener('change', toggleDarkMode);
-toggleDarkMode(darkModeMediaQuery);
+const currentTheme = localStorage.getItem("theme");
+if (currentTheme === "dark") {
+  document.body.classList.add("dark-mode");
+} else {
+  document.body.classList.remove("dark-mode");
+}
