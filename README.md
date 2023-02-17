@@ -3,4 +3,4 @@
 <h1 align="center">Hello, my name is Jeremy Escobar</h1>
 <h3 align="center">Computer/Electrical Engineer </> </h3>
 
-<h3 align="center">Website link [link](https://jge162.github.io/)</h3>
+<h3 align="center">Website (https://jge162.github.io/)</h3>
