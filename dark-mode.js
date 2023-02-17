@@ -1,9 +1,12 @@
+const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
 
-const toggleSwitch = document.querySelector('#toggle-theme');
-
-function switchTheme(event) {
-  if (event.target.checked) {
+function toggleDarkMode(event) {
+  if (event.matches) {
     document.documentElement.setAttribute('data-theme', 'dark');
-    localStorage.setItem('theme', 'dark');
   } else {
-    document.documentElement.setAttribute('data-theme', '
+    document.documentElement.setAttribute('data-theme', 'light');
+  }
+}
+
+darkModeMediaQuery.addEventListener('change', toggleDarkMode);
+toggleDarkMode(darkModeMediaQuery);
