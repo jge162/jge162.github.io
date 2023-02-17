@@ -1,1 +1,7 @@
 
+<script>
+  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    // User has dark mode preference
+    document.querySelector('link[href="style-light.css"]').href = 'style-dark.css';
+  }
+</script>
