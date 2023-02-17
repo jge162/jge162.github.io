@@ -5,7 +5,7 @@
       <title>Jeremy Escobar</title>
       <style>
          body {
-            background-color: #f0f0f0;
+            background-color: ##5b5b5b;
          }
          .navbar {
             display: flex;
@@ -54,7 +54,23 @@
       <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
       </div>
       <div id="home" style="height: 1000px; background-color: #fff;"></div>
-      <div id="about" style="height: 1000px; background-color: #eee;"></div>
+      <div id="about" style="height: 1000px; background-color: #eee;">
+      <div id="contact" style="height: 1000px; background-color: #ccc;">
+   <h2>Contact Me</h2>
+   <form>
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="fname" placeholder="Your name.." required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="123-456-7890">
+
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" required></textarea>
+
+      <input type="submit" value="Email Me">
+   </form>
+</div>
+      </div>
       <div id="projects" style="height: 1000px; background-color: #ddd;"></div>
       <div id="contact" style="height: 1000px; background-color: #ccc;"></div>
       <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
