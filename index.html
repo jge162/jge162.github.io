@@ -4,17 +4,20 @@
       <meta charset="UTF-8">
       <title>Jeremy Escobar</title>
       <style>
+         body {
+            background-color: #f0f0f0;
+         }
          .navbar {
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: #333;
+            background-color: #1a1a1a;
             border-radius: 10px;
             overflow: hidden;
             margin-top: 10px;
          }
          .navbar a {
-            color: #f2f2f2;
+            color: #d9d9d9;
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
@@ -22,7 +25,7 @@
             margin: 0 10px;
          }
          .navbar a:hover {
-            background-color: #ddd;
+            background-color: #d9d9d9;
             color: black;
          }
          .navbar a.active {
@@ -36,10 +39,10 @@
    </head>
    <body>
       <div class="navbar">
-         <a class="active" href="#">Home</a>
-         <a href="#">About</a>
-         <a href="#">Projects</a>
-         <a href="#">Contact</a>
+         <a class="active" href="#home">Home</a>
+         <a href="#about">About</a>
+         <a href="#projects">Projects</a>
+         <a href="#contact">Contact</a>
       </div>
       <div style="text-align: center;">
          <img id="animation-img" src="https://www.springboard.com/blog/wp-content/uploads/2019/07/sb-blog-programming.png" width="1000">
@@ -49,5 +52,9 @@
       </h3>
       <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
       </div>
+      <div id="home" style="height: 1000px; background-color: #fff;"></div>
+      <div id="about" style="height: 1000px; background-color: #eee;"></div>
+      <div id="projects" style="height: 1000px; background-color: #ddd;"></div>
+      <div id="contact" style="height: 1000px; background-color: #ccc;"></div>
    </body>
 </html>
