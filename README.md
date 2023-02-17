@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://www.springboard.com/blog/wp-content/uploads/2019/07/sb-blog-programming.png" width="500">
+  <img src="https://www.springboard.com/blog/wp-content/uploads/2019/07/sb-blog-programming.png" width="800">
 </p>
 
 
