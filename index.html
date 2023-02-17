@@ -8,6 +8,43 @@
       <link rel="stylesheet" href="css/style-dark.css" media="(prefers-color-scheme: dark)">
       <script src="dark-mode.js"></script>
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-9s/xn1D01NQiUT73mcpaLNLrPQmDLvEhSWDc/zN9rUivJ6UksdQRVpZwLPa4NNtD" crossorigin="anonymous">
+      <style>
+         header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 999;
+         }
+         nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         }
+         ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+         }
+         li {
+            margin: 0 10px;
+         }
+         a {
+            text-decoration: none;
+            color: green;
+            font-weight: bold;
+         }
+         a:hover {
+            color: white;
+         }
+      </style>
    </head>
    <body>
       <header>
@@ -19,7 +56,6 @@
                <li><a href="#">Contact</a></li>
             </ul>
          </nav>
-         <button id="toggle-theme">Toggle theme</button>
       </header>
       <div style="text-align: center; margin-top: 100px;">
          <img id="animation-img" src="https://www.springboard.com/blog/wp-content/uploads/2019/07/sb-blog-programming.png" width="1000">
