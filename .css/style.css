@@ -1,6 +1,3 @@
-<head>
-  <link rel="stylesheet" href="style.css">
-</head>
 #animation-img {
   animation-name: scale;
   animation-duration: 1s;
@@ -20,3 +17,22 @@
   }
 }
 
+.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4,
+.dark-mode h5,
+.dark-mode h6 {
+  color: #fff;
+}
+
+.dark-mode a {
+  color: #09f;
+}
+
+/* Add more styles as needed */
