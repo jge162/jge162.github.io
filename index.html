@@ -5,7 +5,7 @@
       <title>Jeremy Escobar</title>
       <style>
          body {
-            background-color: #5b5b5b;
+            background-color: #454545;
             color: white;
             }
          .navbar {
@@ -60,10 +60,10 @@
 <h3 style="color: white; text-align: center;">Computer/Electrical Engineer</h3>
 <button onclick="topFunction()" id="back-to-top" title="Go to top">&#8679;</button>
 <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;"></div>
-<div id="home" style="height: 1000px; background-color: #5b5b5b;"></div>
-<div id="about" style="height: 1000px; background-color: #5b5b5b;"></div>
-<div id="projects" style="height: 1000px; background-color: #5b5b5b;"></div>
-<div id="contact" style="height: 1000px; background-color: #5b5b5b;">
+<div id="home" style="height: 1000px; background-color: #454545;"></div>
+<div id="about" style="height: 1000px; background-color: #454545;"></div>
+<div id="projects" style="height: 1000px; background-color: #454545;"></div>
+<div id="contact" style="height: 1000px; background-color: #454545;">
   <div style="display: flex; justify-content: center;">
     <div>
       <h2 style="color: white; text-align: center;">Contact Me</h2>
@@ -102,5 +102,35 @@
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   }
 </script>
+      function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  // Set duration of the animation (in milliseconds)
+  const duration = 1000; 
+  // Get the current scroll position
+  const start = window.pageYOffset;
+  // Calculate the distance to scroll
+  const distance = -start;
+  let currentTime = 0;
+  // Define the animation function
+  const animateScroll = function() {
+    currentTime += 10;
+    const newPosition = easeInOutQuad(currentTime, start, distance, duration);
+    window.scrollTo(0, newPosition);
+    if (currentTime < duration) {
+      requestAnimationFrame(animateScroll);
+    }
+  };
+  // Define the easing function (optional)
+  const easeInOutQuad = function (t, b, c, d) {
+    t /= d / 2;
+    if (t < 1) return c / 2 * t * t + b;
+    t--;
+    return -c / 2 * (t * (t - 2) - 1) + b;
+  };
+  // Call the animation function
+  animateScroll();
+}
+
    </body>
 </html>
