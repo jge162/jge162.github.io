@@ -36,6 +36,13 @@
             margin-top: 80px;
             border-radius: 10px;
          }
+         #back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 999;
+            display: none;
+         }
       </style>
    </head>
    <body>
@@ -55,9 +62,13 @@
       </div>
       <div id="home" style="height: 1000px; background-color: #fff;"></div>
       <div id="about" style="height: 1000px; background-color: #eee;">
+      <div id="contact" style="height: 1000px; background-color: #ccc;"></div>
+      <div id="projects" style="height: 1000px; background-color: #ddd;"></div>
       <div id="contact" style="height: 1000px; background-color: #ccc;">
-   <h2>Contact Me</h2>
-   <form>
+      <div style="display: flex; justify-content: center;">
+  <div>
+    <h2>Contact Me</h2>
+    <form>
       <label for="fname">First Name</label>
       <input type="text" id="fname" name="fname" placeholder="Your name.." required>
 
@@ -68,30 +79,33 @@
       <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" required></textarea>
 
       <input type="submit" value="Email Me">
-   </form>
+    </form>
+  </div>
 </div>
+
       </div>
-      <div id="projects" style="height: 1000px; background-color: #ddd;"></div>
-      <div id="contact" style="height: 1000px; background-color: #ccc;"></div>
       <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
+<button onclick="topFunction()" id="back-to-top" title="Go to top">&#8679;</button>
+
 <script>
-    // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll = function() {scrollFunction()};
-    
-    function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            document.getElementById("myBtn").style.display = "block";
-        } else {
-            document.getElementById("myBtn").style.display = "none";
-        }
+  // Get the button
+  var mybutton = document.getElementById("back-to-top");
+
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
     }
-    
-    // When the user clicks on the button, scroll to the top of the document
-    function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-    }
+  };
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
 </script>
    </body>
 </html>
