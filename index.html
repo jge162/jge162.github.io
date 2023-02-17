@@ -9,40 +9,35 @@
       <script src="dark-mode.js"></script>
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-9s/xn1D01NQiUT73mcpaLNLrPQmDLvEhSWDc/zN9rUivJ6UksdQRVpZwLPa4NNtD" crossorigin="anonymous">
       <style>
-         header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: black;
-            color: white;
-            padding: 10px 20px;
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            z-index: 999;
+         .navbar {
+         overflow: hidden;
+         background-color: #333;
          }
-         nav {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+         .navbar a {
+         float: left;
+         color: #f2f2f2;
+         text-align: center;
+         padding: 14px 16px;
+         text-decoration: none;
+         font-size: 17px;
          }
-         ul {
-            display: flex;
-            list-style: none;
-            margin: 0;
-            padding: 0;
+         .navbar a:hover {
+         background-color: #ddd;
+         color: black;
          }
-         li {
-            margin: 0 10px;
+         .navbar a.active {
+         background-color: #04AA6D;
+         color: white;
          }
-         a {
-            text-decoration: none;
-            color: green;
-            font-weight: bold;
+         .navbar-right {
+         float: right;
+         margin-top: 50px;
          }
-         a:hover {
-            color: white;
+         #animation-img {
+         margin-top: 80px;
+         }
+         #toggle-theme {
+         margin-top: 20px;
          }
       </style>
    </head>
