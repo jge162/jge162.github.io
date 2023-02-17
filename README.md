@@ -1,3 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Website</title>
+  <style>
+    /* CSS rules go here */
+  </style>
+</head>
+<body>
+  <!-- HTML content goes here -->
+</body>
+</html>
+
 <img src="https://www.springboard.com/blog/wp-content/uploads/2019/07/sb-blog-programming.png" alt="3D Animation Banner" width="1000">
 
 <h1 align="center">Hello, my name is Jeremy Escobar</h1>
