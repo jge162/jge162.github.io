@@ -1,0 +1,16 @@
+body {
+  background-color: #fff;
+  color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+a {
+  color: #009;
+  text-decoration: none;
+}
+
+/* Add more styles as needed */
