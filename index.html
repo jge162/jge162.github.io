@@ -247,7 +247,9 @@
       </div>
 
       <script>
-       // When the user clicks on the button, scroll to the top of the document
+
+         
+         // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
   const scrollStep = -window.scrollY / 50;
   const scrollInterval = setInterval(function() {
@@ -257,13 +259,6 @@ function topFunction() {
       clearInterval(scrollInterval);
     }
   }, 15);
-  
-  // Hide the "back to top" button after a few seconds
-  const backToTopButton = document.getElementById("back-to-top");
-  backToTopButton.style.display = "block";
-  setTimeout(function() {
-    backToTopButton.style.display = "none";
-  }, 3000); // Adjust the timeout value (in milliseconds) to change how long the button is visible
 }
 
 var scroll = new SmoothScroll('a[data-scroll]', {
@@ -272,7 +267,12 @@ var scroll = new SmoothScroll('a[data-scroll]', {
   easing: 'easeInOutCubic' // Adjust the scrolling animation here (use any CSS easing function)
 });
 
-         
+// Hide the "back to top" button after a few seconds
+const backToTopButton = document.getElementById("back-to-top");
+setTimeout(function() {
+  backToTopButton.style.display = "none";
+}, 3000); // Adjust the timeout value (in milliseconds) to change how long the button is visible
+
          
 </script>
   
