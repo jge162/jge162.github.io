@@ -88,3 +88,14 @@
 .mySlides:first-of-type {
   display: block;
 }
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.image {
+  border-radius: 5px;
+  box-shadow: 0 0 10px #c9c9c9;
+  max-width: 50%;
+  height: auto;
+}
