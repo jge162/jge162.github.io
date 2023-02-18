@@ -69,7 +69,7 @@
          form {
             margin: 0 auto;   
             max-width: 480px;
-            background-color: #dee8ea;
+            background-color: #fff;
             padding: 21px;
             border-radius: 5px;
             box-shadow: 0 0 10px #c9c9c9;
@@ -111,15 +111,16 @@
             padding: 8px 16px;
             font-size: 1.2em;
          }
+            <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.min.js"></script>
       </style>
       
    </head>
    <body>
       <div class="navbar">
-         <a class="active" href="#home">Current Projects</a>
-         <a href="#about">Portfolio</a>
-         <a href="#projects">About</a>
-         <a href="#contact">Contact</a>
+         <a class="active" href="#home" data-scroll>Current Projects</a>
+         <a href="#about" data-scroll>Portfolio</a>
+         <a href="#projects" data-scroll>About</a>
+         <a href="#contact" data-scroll>Contact</a>
       </div>
       <div style="text-align: center; margin-top: 0.5in;">
          <img id="animation-img" src="https://www.springboard.com/blog/wp-content/uploads/2019/07/sb-blog-programming.png" width="800">
@@ -194,6 +195,14 @@
     }
   }, 15);
 }
+         
+          var scroll = new SmoothScroll('a[data-scroll]', {
+      speed: 500, // Adjust the scrolling speed here (in milliseconds)
+      speedAsDuration: true,
+      easing: 'easeInOutCubic' // Adjust the scrolling animation here (use any CSS easing function)
+   });
+         
+         
 </script>
   
    </body>
