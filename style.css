@@ -92,19 +92,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.image {
-  border-radius: 5px;
-  box-shadow: 0 0 10px #c9c9c9;
-  max-width: 80%;
-  height: auto;
-}
-.image-container {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 100vh;
 }
 
 .image {
