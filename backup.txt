@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <title>About</title>
+      <style>
+         body {
+            background-color: #454545;
+            color: white;
+         }
+         .navbar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #303030;
+            overflow: hidden;
+            width: 100%; 
+            height: 100%;
+            margin: 0;
+         }
+         .navbar a {
+            color: #d9d9d9;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            margin: 0 10px;
+         }
+         .navbar a:hover {
+            background-color: #d9d9d9;
+            color: black;
+         }
+         .navbar a.active {
+            background-color: #04AA6D;
+            color: white;
+         }
+         .icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+         }
+         .icon i {
+            font-size: 4.5em;
+         }
+         html, body {
+            margin: 0;
+            padding: 0;
+         }
+         #back-to-top {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            left: 50%;
+            transform: translate(-50%, 0);
+         }
+      </style>
+   </head>
+   <body>
+      <div class="navbar">
+         <a class="active" href="#home">Current Projects</a>
+         <a href="#about">Portfolio</a>
+         <a href="#projects">About</a>
+         <a href="#contact">Contact</a>
+      </div>
+      <div style="text-align: center; margin-top: 0.5in;">
+         <img id="animation-img" src="https://www.springboard.com/blog/wp-content/uploads/2019/07/sb-blog-programming.png" width="800">
+      </div>
+      <h1 style="color: white; text-align: center;">Hello, my name is Jeremy Escobar</h1>
+      <h3 style="color: white; text-align: center;">Computer/Electrical Engineer</h3>
+
+      <div class="icon">
+         <i class="fa fa-github" style="font-size: 6.75em;"></i>
+      </div>
+
+      <button onclick="topFunction()" id="back-to-top" title="Go to top">&#8679;</button>
+      <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;"></div>
+      <div id="home" style="height: 1000px; background-color: #454545;">   </div>
+      <div id="about" style="height: 1000px; background-color: #454545;">   </div>
+      <div id="projects" style="height: 1000px; background-color: #454545;">   </div>
+      <div id="contact" style="height: 1000px; background-color: #454545;">   </div>
+
+      <script>
+         // Get the button
+         var mybutton = document.getElementById("back-to-top");
+
+         // Show the button when the user scrolls down 20px from the top of the document
+         window.onscroll = function() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+               mybutton.style.display = "block";
+            } else {
+               mybutton.style.display = "none";
+            }
+         };
+
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+  const scrollStep = -window.scrollY / 50;
+  const scrollInterval = setInterval(function() {
+    if (window.scrollY !== 0) {
+      window.scrollBy(0, scrollStep);
+    } else {
+      clearInterval(scrollInterval);
+    }
+  }, 15);
+}
+</script>
+  
+   </body>
+</html>
