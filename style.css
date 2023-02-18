@@ -92,12 +92,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 
 .image {
   border-radius: 5px;
   box-shadow: 0 0 10px #c9c9c9;
-  max-width: 50%;
+  max-width: 80%;
   height: auto;
 }
