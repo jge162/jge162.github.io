@@ -3,6 +3,7 @@
    <head>
       <meta charset="UTF-8">
       <title>About</title>
+      <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.min.js"></script>
       <style>
          body {
             background-color: #454545;
@@ -17,6 +18,7 @@
             width: 100%; 
             height: 100%;
             margin: 0;
+            box-shadow: 0 0 10px #c9c9c9;
          }
          .navbar a {
             color: #d9d9d9;
@@ -51,18 +53,75 @@
             display: none;
             position: fixed;
             bottom: 0;
-            right: 0;
             left: 50%;
             transform: translate(-50%, 0);
+            width: 5%;
+            height: 5%;
+         }
+         #animation-img {
+            border-radius: 5px;
+            box-shadow: 0 0 10px #c9c9c9;
+         }
+         h1 {
+            text-align: center;
+            margin-top: 50px;
+         }
+
+         form {
+            margin: 0 auto;   
+            max-width: 480px;
+            background-color: #fff;
+            padding: 21px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px #c9c9c9;
+         }
+
+         .form-group {
+            margin-bottom: 15px;
+            text-align: center;
+         }
+
+         label {
+            display: block;
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 5px;
+         }
+
+         input[type="text"],
+         input[type="email"],
+         textarea {
+            width: 100%;
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #c9c9c9;
+            font-size: 1.2em;
+            test-align: center;
+         }
+
+         textarea {
+            height: 105px;
+         }
+
+         button[type="submit"] {
+            display: block;
+            margin: 0 auto;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 8px 16px;
+            font-size: 1.2em;
          }
       </style>
+      
    </head>
    <body>
       <div class="navbar">
-         <a class="active" href="#home">Current Projects</a>
-         <a href="#about">Portfolio</a>
-         <a href="#projects">About</a>
-         <a href="#contact">Contact</a>
+         <a class="active" href="#home" data-scroll>Current Projects</a>
+         <a href="#about" data-scroll>Portfolio</a>
+         <a href="#projects" data-scroll>About</a>
+         <a href="#contact" data-scroll>Contact</a>
       </div>
       <div style="text-align: center; margin-top: 0.5in;">
          <img id="animation-img" src="https://www.springboard.com/blog/wp-content/uploads/2019/07/sb-blog-programming.png" width="800">
@@ -79,7 +138,38 @@
       <div id="home" style="height: 1000px; background-color: #454545;">   </div>
       <div id="about" style="height: 1000px; background-color: #454545;">   </div>
       <div id="projects" style="height: 1000px; background-color: #454545;">   </div>
-      <div id="contact" style="height: 1000px; background-color: #454545;">   </div>
+      <div id="contact" style="height: 1000px; background-color: #454545;">   
+      
+      <h1>Contract Form</h1>
+      <form>
+         <div class="form-group">
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required>
+         </div>
+         <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+         </div>
+         <div class="form-group">
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone" placeholder="Enter your phone number" required>
+         </div>
+         <div class="form-group">
+            <label for="company">Company:</label>
+            <input type="text" id="company" name="company" placeholder="Enter your company name" required>
+         </div>
+         <div class="form-group">
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" placeholder="Enter the description of your project" required></textarea>
+         </div>
+         <div class="form-group">
+            <button type="submit">Submit</button>
+         </div>
+      </form>
+         
+         
+      
+      </div>
 
       <script>
          // Get the button
@@ -106,6 +196,14 @@
     }
   }, 15);
 }
+         
+          var scroll = new SmoothScroll('a[data-scroll]', {
+      speed: 500, // Adjust the scrolling speed here (in milliseconds)
+      speedAsDuration: true,
+      easing: 'easeInOutCubic' // Adjust the scrolling animation here (use any CSS easing function)
+   });
+         
+         
 </script>
   
    </body>
