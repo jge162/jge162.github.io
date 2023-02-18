@@ -26,3 +26,14 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.image {
+  border-radius: 5px;
+  box-shadow: 0 0 10px #c9c9c9;
+  max-width: 50%;
+  height: auto;
+}
