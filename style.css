@@ -85,3 +85,6 @@
   from {opacity: .4}
   to {opacity: 1}
 }
+.mySlides:first-of-type {
+  display: block;
+}
