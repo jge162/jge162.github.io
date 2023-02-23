@@ -156,7 +156,7 @@ h1 {
 
 /* Content */
 .content {
-  background-color: white;
+  background-color: black;
   padding: 10px;
 }
 
@@ -183,7 +183,3 @@ h1 {
 .btn.active {
   background-color: #666;
    color: white;
-}
-.content {
-  color: black;
-}
