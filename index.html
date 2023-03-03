@@ -9,28 +9,35 @@
    <head>
    <title>Jeremy Escobar</title>
    
+   <!--favicon-->
    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
    <link rel="manifest" href="favicon/site.webmanifest">
    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
-   
    <meta name="msapplication-TileColor" content="#da532c">
    <meta content="#ffffff">
    
+   <!-- stylesheet/fonts/script -->
+
       <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.min.js"></script>
       <link rel="stylesheet" type="text/css" href="css/style.css">
       <script type="text/javascript" src="js/script.js"></script>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
       <link rel="stylesheet" type="text/css" href="css/navbar.css">
       <script type="text/javascript" src="js/navbar.js"></script>
-      <link rel="stylesheet" type="text/css" href="css/styles.css">
-      <link rel="stylesheet" type="text/css" href="css/styles.css">
-      <link rel="stylesheet" type="text/css" href="css/navbar.css">
       <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
       
    </head>
    <body>
@@ -51,55 +58,54 @@
       </div>
       </nav>
       <h1 id="h1abc">Hello, my name is Jeremy Escobar</h1>
-      <h3 style="color: white; text-align: center;">Computer/Electrical Engineer</h3>
-      <div style="display: flex; justify-content: center;">
-         <a href="https://github.com/jge162" style="margin-right: 10px;">
+      <h3 id="Titleh3">Computer/Electrical Engineer</h3>
+      <div id="div1">
+         <a href="https://github.com/jge162" id="href1" title="GitHub">
          <i class="fa fa-github fa_customs fa-4x"></i>
          </a>
          <a href="https://linkedin.com" title="LinkedIn">
          <i class="fa fa-linkedin-square fa_custom fa-4x"></i>
          </a>
       </div>
-      <button onclick="topFunction()" id="back-to-top" title="Go to top">&#8679;</button>
-      <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;"></div>
-      <!-- Your existing HTML code -->
-      <div style="height: 300px;"></div>
+      
+      <button onclick="topFunction()" id="back-to-top" title="Go to top">&#8679;</button> <br> <br>
+
       <!-- Your other content below this point -->
-      <div id="Current Projects" style="height: 1000px; background-color: #454545;">
+      <div id="CurrentProjects1">
+
          <!-- Slideshow container -->
          <div class="slideshow-container">
+
             <div class="mySlides fade">
-               <div class="numbertext">1 / 3</div>
-               <img src="./img/create-release-on-close.jpg" style="width:100%" title="Create-release upon closing a PR">
-               <div class="text">  </div>
-               <span class="dot active" onclick="currentSlide(1)"></span>
+               <img src="img/create-release-on-close.jpg" title="Create PR on close" class="imgcarrousel" >
             </div>
             <div class="mySlides fade">
-               <div class="numbertext">2 / 3</div>
-               <img src="img/github-verilog-compiler.jpg" style="width:100%" title="Verilog compiler">
-               <div class="text">  </div>
+               <img src="img/github-verilog-compiler.jpg" title="Verilog Compiler" class="imgcarrousel">
             </div>
             <div class="mySlides fade">
-               <div class="numbertext">3 / 3</div>
-               <img src="img/python-action.jpg" style="width:100%" title="Python actions">
-               <div class="text">  </div>
+               <img src="img/python-action.jpg" title="Python action" class="imgcarrousel">
             </div>
+
             <!-- Next and previous buttons -->
+
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
          </div>
          <br>
+
          <!-- The dots/circles -->
-         <div style="text-align:center">
+         <div id="Carrousel">
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
          </div>
       </div>
-      <div id="Portfolio" style="height: 1000px; background-color: #454545;">
+      
+      <div id="Portfolio">
          
          
       <h2>PORTFOLIO</h2>
+
 <div id="myBtnContainer">
 <button class="btn active" onclick="filterSelection('all')"> Show all</button>
 <button class="btn" onclick="filterSelection('Embedded C')"> Embedded C</button>
@@ -108,162 +114,104 @@
 </div>
 
 <!-- Portfolio Gallery Grid -->
+
 <div class="row">
 <div class="column Embedded C">
    <div class="content">
-      <img src="./resources/LCD.jpg" alt="LCD" style="width:100%">
+      <img src="./resources/LCD.jpg" alt="LCD" class="img1">
       <h4>Microcontroller</h4>
       <p>EGCP 450 Fall 2022</p>
    </div>
 </div>
 <div class="column Embedded C">
    <div class="content">
-      <img src="/w3images/lights.jpg" alt="Lights" style="width:100%">
+      <img src="/w3images/lights.jpg" alt="Lights" class="img1">
       <h4>Lights</h4>
       <p>Lorem ipsum dolor..</p>
    </div>
 </div>
 <div class="column Embedded C">
    <div class="content">
-      <img src="/w3images/nature.jpg" alt="Nature" style="width:100%">
+      <img src="/w3images/nature.jpg" alt="Nature" class="img1">
       <h4>Forest</h4>
       <p>Lorem ipsum dolor..</p>
    </div>
 </div>
 
-  <div class="column Verilog">
-    <div class="content">
-      <img src="/w3images/cars1.jpg" alt="Car" style="width:100%">
+<div class="column Verilog">
+   <div class="content">
+      <img src="/w3images/cars1.jpg" alt="Car" class="img1">
       <h4>Retro</h4>
       <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-  <div class="column Verilog">
-    <div class="content">
-      <img src="/w3images/cars2.jpg" alt="Car" style="width:100%">
+   </div>
+</div>
+<div class="column Verilog">
+   <div class="content">
+      <img src="/w3images/cars2.jpg" alt="Car" class="img1">
       <h4>Fast</h4>
       <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-  <div class="column Verilog">
-    <div class="content">
-      <img src="/w3images/cars3.jpg" alt="Car" style="width:100%">
+   </div>
+</div>
+<div class="column Verilog">
+   <div class="content">
+      <img src="/w3images/cars3.jpg" alt="Car" class="img1">
       <h4>Classic</h4>
       <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
+   </div>
+</div>
 
-  <div class="column VHDL">
-    <div class="content">
-      <img src="/w3images/people1.jpg" alt="People" style="width:100%">
+<div class="column VHDL">
+   <div class="content">
+      <img src="/w3images/people1.jpg" alt="People" class="img1">
       <h4>Girl</h4>
       <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-  <div class="column VHDL">
-    <div class="content">
-      <img src="/w3images/people2.jpg" alt="People" style="width:100%">
+   </div>
+</div>
+<div class="column VHDL">
+   <div class="content">
+      <img src="/w3images/people2.jpg" alt="People" class="img1">
       <h4>Man</h4>
       <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-  <div class="column VHDL">
-    <div class="content">
-      <img src="/w3images/people3.jpg" alt="People" style="width:100%">
+   </div>
+</div>
+<div class="column VHDL">
+   <div class="content">
+      <img src="/w3images/people3.jpg" alt="People" class="img1">
       <h4>Woman</h4>
       <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-<!-- END GRID -->
+   </div>
 </div>
-         
-      </div>
+</div>
+</div>
 
-
-      <!-- Your existing HTML code -->
-      <div style="height: 300px;"></div>
       <!-- Your other content below this point -->
-      <div id="Contact" style="height: 1000px; background-color: #454545;">
-         <h1>Contract Form</h1>
+      <div id="Contact">
+         <h1 id="Form1">Contract Form</h1>
          <form>
             <div class="form-group">
                <label for="full-name">Full Name:</label>
-               <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required>
+               <input type="text" class="description" name="full-name" placeholder="Enter your full name" required>
             </div>
             <div class="form-group">
                <label for="email">Email:</label>
-               <input type="email" id="email" name="email" placeholder="Enter your email" required>
+               <input type="email" class="description" name="email" placeholder="Enter your email" required>
             </div>
             <div class="form-group">
                <label for="phone">Phone:</label>
-               <input type="text" id="phone" name="phone" placeholder="Enter your phone number" required>
+               <input type="text" class="description" name="phone" placeholder="Enter your phone number" required>
             </div>
             <div class="form-group">
                <label for="company">Company:</label>
-               <input type="text" id="company" name="company" placeholder="Enter your company name" required>
+               <input type="text" class="description" name="company" placeholder="Enter your company name" required>
             </div>
             <div class="form-group">
                <label for="description">Description:</label>
-               <textarea id="description" name="description" placeholder="Enter the description of your project" required></textarea>
+               <textarea class="description" name="description" placeholder="Enter the description of your project" required></textarea>
             </div>
             <div class="form-group">
-               <button type="submit">Submit</button>
+               <button type="submit" id="button1">Submit</button>
             </div>
          </form>
       </div>
-      <script>
-         // Get the button
-                 var mybutton = document.getElementById("back-to-top");
-         
-                 // Show the button when the user scrolls down 20px from the top of the document
-                 window.onscroll = function() {
-                    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                       mybutton.style.display = "block";
-                    } else {
-                       mybutton.style.display = "none";
-                    }
-                 };
-         
-         
-          // When the user clicks on the button, scroll to the top of the document
-          function topFunction() {
-          const scrollStep = -window.scrollY / 50;
-          const scrollInterval = setInterval(function() {
-            if (window.scrollY !== 0) {
-              window.scrollBy(0, scrollStep);
-            } else {
-              clearInterval(scrollInterval);
-            }
-          }, 15);
-         }
-                 
-                  var scroll = new SmoothScroll('a[data-scroll]', {
-              speed: 500, // Adjust the scrolling speed here (in milliseconds)
-              speedAsDuration: true,
-              easing: 'easeInOutCubic' // Adjust the scrolling animation here (use any CSS easing function)
-           });
-                  
-      </script>
-      <script>
-         let slideIndex = 0;
-         showSlides();
-         
-         function showSlides() {
-           let i;
-           let slides = document.getElementsByClassName("mySlides");
-           let dots = document.getElementsByClassName("dot");
-           for (i = 0; i < slides.length; i++) {
-             slides[i].style.display = "none";  
-           }
-           slideIndex++;
-           if (slideIndex > slides.length) {slideIndex = 1}    
-           for (i = 0; i < dots.length; i++) {
-             dots[i].className = dots[i].className.replace(" active", "");
-           }
-           slides[slideIndex-1].style.display = "block";  
-           dots[slideIndex-1].className += " active";
-           setTimeout(showSlides, 2000); // Change image every 2 seconds
-         }
-      </script>
    </body>
 </html>

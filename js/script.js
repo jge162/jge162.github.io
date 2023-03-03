@@ -26,6 +26,7 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
 filterSelection("all") // Execute the function and show all columns
 function filterSelection(c) {
   var x, i;
@@ -73,3 +74,53 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
+
+// Get the button
+var mybutton = document.getElementById("back-to-top");
+
+// Show the button when the user scrolls down 20px from the top of the document
+window.onscroll = function() {
+if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+} else {
+    mybutton.style.display = "none";
+}
+};
+
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+const scrollStep = -window.scrollY / 50;
+const scrollInterval = setInterval(function() {
+if (window.scrollY !== 0) {
+window.scrollBy(0, scrollStep);
+} else {
+clearInterval(scrollInterval);
+}
+}, 15);
+}
+
+var scroll = new SmoothScroll('a[data-scroll]', {
+speed: 500, // Adjust the scrolling speed here (in milliseconds)
+speedAsDuration: true,
+easing: 'easeInOutCubic' // Adjust the scrolling animation here (use any CSS easing function)
+});
+
+//navbar
+
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+
+//loader
+
+window.addEventListener("load", function() {
+  const loader = document.getElementById("loader");
+  loader.classList.add("hidden");
+});

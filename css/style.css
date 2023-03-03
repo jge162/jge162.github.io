@@ -20,16 +20,81 @@
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  color: white;
+  color: rgb(0, 174, 255);
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
 }
 
+#Titleh3 {
+  color: white; 
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+#div1 {
+  display: flex; 
+  justify-content: center;
+}
+
 #div0001 {
   text-align: center;
   margin-top: 0.5in;
+}
+
+#href1 {
+  margin-right: 10px;
+}
+
+#Form1 {
+  font-family: 'Poppins', sans-serif;
+}
+
+#div2{
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  flex-direction: column
+}
+
+#div3 {
+  height: 300px;
+}
+
+#CurrentProjects1 {
+  height: 1000px; 
+  background-color: #454545;
+}
+
+#Carrousel {
+  text-align:center
+}
+
+.none {
+  display: block;
+}
+
+#Portfolio {
+  height: 1000px; 
+  background-color: #454545;
+}
+
+#div4 {
+  height: 300px;
+}
+
+#Contact {
+  height: 1000px; 
+  background-color: #454545;
+}
+
+.description {
+  font-family: 'PT Sans', sans-serif;
+}
+
+#button1 {
+  font-family: 'Tilt Neon', cursive;
 }
 
 #h1abc {
@@ -42,14 +107,16 @@
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
+  color: rgb(0, 174, 255);
 }
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: #bbb;
 }
 
 /* Caption text */
+
 .text {
   color: #f2f2f2;
   font-size: 15px;
@@ -60,16 +127,12 @@
   text-align: center;
 }
 
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
+.imgcarrousel {
+  height:563px;
 }
 
 /* The dots/bullets/indicators */
+
 .dot {
   cursor: pointer;
   height: 15px;
@@ -95,9 +158,11 @@
   from {opacity: .4}
   to {opacity: 1}
 }
+
 .mySlides:first-of-type {
   display: block;
 }
+
 .image-container {
   display: flex;
   justify-content: center;
@@ -111,6 +176,7 @@
   max-width: 80%;
   height: auto;
 }
+
 nav {
   position: fixed;
   top: 0;
@@ -119,6 +185,7 @@ nav {
   height: 50px;
   background-color: #333;
 }
+
 * {
   box-sizing: border-box;
 }
@@ -192,13 +259,14 @@ h1 {
 /* Add a dark background color to the active button */
 .btn.active {
   background-color: #666;
-   color: white;
+  color: white;
 }
 
 body {
   background-color: #454545;
   color: white;
   }
+
   .navbar {
   display: flex;
   justify-content: center;
@@ -208,6 +276,7 @@ body {
   margin: 0;
   box-shadow: 0 0 10px #c9c9c9;
   }
+
   .navbar a {
   color: #d9d9d9;
   text-align: center;
@@ -216,27 +285,33 @@ body {
   font-size: 17px;
   margin: 0 10px;
   }
+
   .navbar a:hover {
   background-color: #d9d9d9;
   color: black;
   }
+
   .navbar a.active {
   background-color: #04AA6D;
   color: white;
   }
+  
   .icon {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   }
+
   .icon i {
   font-size: 4.5em;
   }
+
   html, body {
   margin: 0;
   padding: 0;
   }
+
   #back-to-top {
   display: none;
   position: fixed;
@@ -246,14 +321,17 @@ body {
   width: 5%;
   height: 5%;
   }
+
   #animation-img {
   border-radius: 5px;
   box-shadow: 0 0 10px #c9c9c9;
   }
+
   h1 {
   text-align: center;
   margin-top: 50px;
   }
+
   form {
   margin: 0 auto;   
   max-width: 480px;
@@ -262,22 +340,26 @@ body {
   border-radius: 5px;
   box-shadow: 0 0 10px #c9c9c9;
   }
+
   .form-group {
   margin-bottom: 15px;
   text-align: center;
   }
+
   .form-group {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 15px;
   }
+
   label {
   display: block;
   font-size: 1.2em;
   font-weight: bold;
   margin-bottom: 5px;
   }
+
   input[type="text"],
   input[type="email"],
   textarea {
@@ -288,9 +370,11 @@ body {
   font-size: 1.2em;
   text-align: center;
   }
+
   textarea {
   height: 105px;
   }
+
   button[type="submit"] {
   display: block;
   margin: 0 auto;
@@ -307,3 +391,50 @@ body {
   .fa_customs {
   color: #ffffff
   }
+
+  #loader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #454545;
+    z-index: 9999;
+  }
+  
+  #loader img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  /* Navbar styling */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #333;
+}
+
+/* Progress bar styling */
+.progress-container {
+  height: 3px;
+  background-color: #ccc;
+  position: relative;
+  margin-top: -3px;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #4CAF50;
+  width: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: width 0.5s;
+}
