@@ -192,14 +192,89 @@
          </div>
       </div>
       <div id="Portfolio" style="height: 1000px; background-color: #454545;">
-         <div class="parent-element" style="text-align: center;">
-            <div class="image-container">
-               <a href="https://github.com/jge162">
-               <img src="./resources/img4.jpg" alt="GitHub" class="image" style="max-width: 80%; height: auto;">
-               </a>
-            </div>
-         </div>
+         
+         
+       <h2>PORTFOLIO</h2>
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('Embedded C')"> Embedded C</button>
+  <button class="btn" onclick="filterSelection('Verilog')"> Verilog</button>
+  <button class="btn" onclick="filterSelection('VHDL')"> VHDL</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column Embedded C">
+    <div class="content">
+      <img src="./resources/LCD.jpg" alt="LCD" style="width:100%">
+      <h4>Microcontroller</h4>
+      <p>EGCP 450 Fall 2022</p>
+    </div>
+  </div>
+  <div class="column Embedded C">
+    <div class="content">
+      <img src="/w3images/lights.jpg" alt="Lights" style="width:100%">
+      <h4>Lights</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column Embedded C">
+    <div class="content">
+      <img src="/w3images/nature.jpg" alt="Nature" style="width:100%">
+      <h4>Forest</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+
+  <div class="column Verilog">
+    <div class="content">
+      <img src="/w3images/cars1.jpg" alt="Car" style="width:100%">
+      <h4>Retro</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column Verilog">
+    <div class="content">
+      <img src="/w3images/cars2.jpg" alt="Car" style="width:100%">
+      <h4>Fast</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column Verilog">
+    <div class="content">
+      <img src="/w3images/cars3.jpg" alt="Car" style="width:100%">
+      <h4>Classic</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+
+  <div class="column VHDL">
+    <div class="content">
+      <img src="/w3images/people1.jpg" alt="People" style="width:100%">
+      <h4>Girl</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column VHDL">
+    <div class="content">
+      <img src="/w3images/people2.jpg" alt="People" style="width:100%">
+      <h4>Man</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column VHDL">
+    <div class="content">
+      <img src="/w3images/people3.jpg" alt="People" style="width:100%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+         
       </div>
+
+
       <!-- Your existing HTML code -->
       <div style="height: 300px;"></div>
       <!-- Your other content below this point -->
